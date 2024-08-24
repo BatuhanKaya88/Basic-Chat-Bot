@@ -38,7 +38,7 @@ Contributions to this project are welcome! If you'd like to contribute, please f
 5. Submit a pull request to the main repository.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.txt).
 Fork the repository.
 Create a new branch for your feature or bug fix.
 Make your changes and commit them.
