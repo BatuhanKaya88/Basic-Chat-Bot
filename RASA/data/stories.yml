@@ -1,0 +1,249 @@
+version: "3.1"
+
+stories:
+
+- story: greet and goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: affirm and deny
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+  - intent: deny
+  - action: utter_deny
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: mood feedback
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: ask for help
+  steps:
+  - intent: ask_for_help
+  - action: utter_ask_for_help
+
+- story: ask about product
+  steps:
+  - intent: ask_product
+  - action: utter_ask_product
+
+- story: ask about payment
+  steps:
+  - intent: ask_payment
+  - action: utter_ask_payment
+
+- story: ask about invoice
+  steps:
+  - intent: ask_invoice
+  - action: utter_ask_invoice
+
+- story: ask about music
+  steps:
+  - intent: ask_music
+  - action: utter_ask_music
+
+- story: good offer product
+  steps:
+  - intent: good_offer_product
+  - action: utter_good_offer_product
+
+- story: payment page
+  steps:
+  - intent: payment_page
+  - action: utter_payment_page
+
+- story: detailed invoice
+  steps:
+  - intent: detailed_invoice
+  - action: utter_detailed_invoice
+
+- story: redirect to music site
+  steps:
+  - intent: redirect_to_music_site
+  - action: utter_redirect_to_music_site
+
+- story: redirect to customer service
+  steps:
+  - intent: redirect_to_customer_service
+  - action: utter_redirect_to_customer_service
+
+- story: bot challenge
+  steps:
+  - intent: action_bot_challenge
+  - action: utter_action_bot_challenge
+
+- story: unrecognized input
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+  - intent: ask_for_help
+  - action: utter_ask_for_help
+
+- story: fizy music suggestion
+  steps:
+    - intent: fizy_music_suggestion
+    - action: utter_fizy_music_suggestion
+
+- story: fizy sad mood
+  steps:
+    - intent: action_sad_mood
+    - action: utter_action_sad_mood
+
+- story: choosing sad
+  steps:
+    - intent: action_sad_mood
+    - action: utter_action_sad_mood
+    - intent: choosing_sad
+    - action: utter_choosing_sad
+
+- story: choosing happy
+  steps:
+    - intent: action_sad_mood
+    - action: utter_action_sad_mood
+    - intent: choosing_happy
+    - action: utter_choosing_happy
+
+- story: action happy mood
+  steps:
+    - intent: action_happy_mood
+    - action: utter_action_happy_mood
+
+- story: action rap music
+  steps:
+    - intent: rap_music
+    - action: utter_rap_music
+
+- story: action turkish rap music
+  steps:
+    - intent: rap_music
+    - action: utter_rap_music
+    - intent: turkish_rap_music
+    - action: utter_turkish_rap_music
+
+- story: action yabanci rap music
+  steps:
+    - intent: rap_music
+    - action: utter_rap_music
+    - intent: yabanci_rap_music
+    - action: utter_yabanci_rap_music
+
+- story: action old school rap music
+  steps:
+    - intent: rap_music
+    - action: utter_rap_music
+    - intent: oldschool_rap_music
+    - action: utter_oldschool_rap_music
+
+- story: play random song fizy
+  steps:
+    - intent: play_random_song_fizy
+    - action: utter_play_random_song_fizy
+
+- story: play top charts fizy
+  steps:
+    - intent: play_top_charts_fizy
+    - action: utter_play_top_charts_fizy
+
+- story: shopping_interaction
+  steps:
+  - intent: ask_product
+  - action: utter_ask_product
+  - intent: offer_product
+  - action: utter_offer_product
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: customer inquiry and offer product
+  steps:
+  - intent: ask_for_help
+  - action: utter_ask_for_help
+  - intent: offer_product
+  - action: utter_offer_product
+
+- story: ask about payment and redirect to payment page
+  steps:
+  - intent: ask_payment
+  - action: utter_ask_payment
+  - intent: payment_page
+  - action: utter_payment_page
+
+- story: ask about invoice and redirect to detailed invoice
+  steps:
+  - intent: ask_invoice
+  - action: utter_ask_invoice
+  - intent: detailed_invoice
+  - action: utter_detailed_invoice
+
+- story: mood feedback and redirection
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+  - intent: ask_for_help
+  - action: utter_ask_for_help
+  - intent: redirect_to_customer_service
+  - action: utter_redirect_to_customer_service
+
+- story: music inquiry and redirect to music site
+  steps:
+  - intent: ask_music
+  - action: utter_ask_music
+  - intent: redirect_to_music_site
+  - action: utter_redirect_to_music_site
+
+- story: challenge and acknowledgment
+  steps:
+  - intent: action_bot_challenge
+  - action: utter_action_bot_challenge
+  - intent: affirm
+  - action: utter_affirm
+
+- story: random interaction
+  steps:
+  - intent: ask_for_help
+  - action: utter_ask_for_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: inquiry and acknowledgment
+  steps:
+  - intent: ask_product
+  - action: utter_ask_product
+  - intent: affirm
+  - action: utter_affirm
+
+- story: product inquiry, offer, and acknowledgment
+  steps:
+  - intent: ask_product
+  - action: utter_ask_product
+  - intent: offer_product
+  - action: utter_offer_product
+  - intent: good_offer_product
+  - action: utter_good_offer_product
+
+- story: music inquiry and redirection
+  steps:
+  - intent: ask_music
+  - action: utter_ask_music
+  - intent: redirect_to_music_site
+  - action: utter_redirect_to_music_site
+
+- story: pasaj info
+  steps:
+  - intent: pasaj_info
+  - action: utter_pasaj_info
+  - intent: ask_product
+  - action: utter_ask_product
+
+#SEBİL TARAFINDAN YAPILDI😮
